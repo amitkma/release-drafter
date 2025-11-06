@@ -2505,7 +2505,7 @@ describe('release-drafter', () => {
           if (
             body.query.includes('query findCommitsWithAssociatedPullRequests')
           ) {
-            expect(body.variables.historyLimit).toBe(40)
+            expect(body.variables.historyLimit).toBe(10)
             return true
           }
           return false
